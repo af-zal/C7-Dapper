@@ -125,7 +125,7 @@ namespace EmpCoreAPIDapper.Controllers
         }
 
         //one to many
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult GetEmployeeWithTasks(int id)
         {
             var connection = new SqlConnection(_config.GetConnectionString("DapperConnectionString"));
